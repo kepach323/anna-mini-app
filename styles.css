@@ -1,1 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f2f2f7;
+    color: #1c1c1e;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.ios-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.ios-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ios-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #007aff;
+    margin: 0;
+}
+
+.ios-subtitle {
+    font-size: 1rem;
+    color: #8e8e93;
+    margin: 5px 0 0;
+}
+
+.ios-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ios-section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1c1c1e;
+    margin: 0 0 10px;}
+
+.ios-caption {
+    font-size: 0.9rem;
+    color: #8e8e93;
+    margin: 10px 0 0;
+}
+
+.candy-bowl-ios {
+    text-align: center;
+}
+
+.bowl-ios {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffd8be, #ffb3c6);
+    border: 6px dashed #ff85a2;
+    overflow: hidden;
+}
+
+.candy {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: fall 1s ease-out;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.ios-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0;}
+
+.ios-button.primary {
+    background: #007aff;
+    color: white;
+}
+
+.ios-button.secondary {
+    background: #f2f2f7;
+    color: #007aff;
+    border: 1px solid #d1d1d6;
+}
+
+.ios-button:hover {
+    opacity: 0.9;
+}
+
+.ios-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.ios-menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+    padding: 12px 5px;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #1c1c1e;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ios-menu-btn:hover {
+    background: #f2f2f7;
+}
